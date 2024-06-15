@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header1">
+        <div class="container">
+            <nav>
+                <i class="fa-light fa-id-card"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            
+        </div>
+    </div>
+  
+  <!-- ----------ABOUT---------- -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                
+                <img src="photo1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><i>I'm somya, a passionate and innovative web developer with a strong background in Java and Python .
+                    With a flair for coding.</i>
+               </p>
+               <p>
+                                                                             
+                                                                                                                    
+               </p>
+               <P>
+                   And also I'm a dedicated to solve the queries in many plaatforms such as"HACKERRANK","LEETCODE","CODEFORCES","CODECHEF" many more.
+                   I had got many certificates regarding coding contests during my first year .
+                  now trying to develop more Experience in this tech sector of codingg.. </i>
+               </P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('Course Completed')">Internships & course completed</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>MEAN stack developer</span><br>Building a Full web pages</li>
+                        <li><span>web Development</span><br>Designing Web/App interfaces</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Course Completed">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>MEAN stack developer</span><br>Building a Full web pages</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Course Completed">
+                    <ul>
+                        <li><span>2023</span><br>Internship at Codsoft.</li>
+                        <li><span>2022-2023</span><br>Web Development</li>
+                        <li><span>2023 - Current</span><br>WEB developer</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>copyright @ 2024. Made with <i class="fas fa-heart"></i> by Somya</p>
+</div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName('tab-links');
+    var tabContents = document.getElementsByClassName('tab-contents');
+
+    function openTab(tabName) {
+        for (tabLink of tabLinks) {
+            tabLink.classList.remove('active-link');
+        }
+        for (tabContent of tabContents) {
+            tabContent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabName).classList.add('active-tab');
+    }
+
+    // JavaScript for handling the mobile navigation menu
+    document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+
+    document.querySelector('.fas.fa-times').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.remove('show');
+    });
+
+</script>
+</body>
+
+</html>
