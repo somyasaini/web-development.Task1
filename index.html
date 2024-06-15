@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin = "anonymous"> </script>
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <i class="fa-light fa-id-card"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">My work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Somya saini<br></span> somya from India</h1>
+                <br>
+                <p>Java Developer | Web Developer </p><br>
+               <a class="button" href="contact.html" title="">HIRE ME</a>
+            </div>
+           
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    
+                    <img src="photo1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><i>I'm Somya, a passionate and innovative web developer with a strong background in Java and Python .
+                        With a flair for coding.</i>
+                   </p>
+                   <p>
+                                                                                 
+                                                                                                                        
+                   </p>
+                   <P>
+                       And also I'm a dedicated to solve the queries in many plaatforms such as"HACKERRANK","CODECHEF" many more.
+                       I had got many certificates regarding coding contests during my first year .
+                        I am a 5 star holder in Python and 4 star holder in Java now trying to develop more Experience in this tech sector of codingg.. </i>
+                   </P>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Course Completed')">Internship & course completed</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>MEAN stack developer</span><br>Building a Full web pages</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Course Completed">
+                        <ul>
+                            <li><span>2022-2023</span><br>Web Development</li>
+                            <li><span>2024 - Current</span><br>WEB developer</li>
+                            <li><span>2023-ongoing</span><br>JAVA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th 2020</span><br>Rishikul international school</li>
+                            <li><span>12th 2022</span><br>K.R girls ineter college.</li>
+                            <li><span> B.tech(2022-2026)</span><br>GLA UNIVERSITY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Are you looking to create a stunning and functional website for your business or personal project?
+                    Look no further! I'm excited to offer my professional web development services to help you bring your ideas to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Development</h2>
+                    <p>Are you looking to turn your idea into a reality looking and working code. Look no further! I'm thrilled to offer my professional Java Development  services 
+                       to help you create innovative and user-friendly codes.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python coding</h2>
+                    <p>Are you in need of a Dynamic programing(DP) and user-focused codes that brings your ideas to answers? Look no further! I'm excited to offer my professional to solve the python codes.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> somyasaini43@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 8218134824</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ 2024. Made with <i class="fas fa-heart"></i> Somya</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+
+</html>
